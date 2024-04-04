@@ -1,33 +1,60 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+  }
+
+h2 {
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: "PorterSans";
+    src: url("../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf");
 }
 
 .TopNav {
     overflow: hidden;
     background-color: #ffffff88;
     position: fixed;
-    width: 1400px;
+    width: 95%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 70px;
-    margin: 30px;
     border-radius: 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0px 40px;
 }
 
 .TopNav a {
-    display: inline-block;
-    float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    line-height: 80px;
     text-decoration: none;
     font-size:14px;
-    height: 50px;
-    width: 300px;
 }
 
+.SearchContainer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.SearchContainer input {
+    border: none;
+}
 
 
 .TopNavRight a, li{
@@ -57,7 +84,7 @@ body {
     }
 
     .flexbox p{
-        display: inline-block;
+    display: inline-block;
 
     }
 
@@ -79,4 +106,99 @@ body {
     .container {
         width: 300px;
         height: 300px;
+    }
+
+    .HeaderContainer {
+        background-image: url(../assets/homePageHeader.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: baseline;  
+        flex-direction: column-reverse;  
+        align-content: space-around;
+        padding: 5%;
+    }
+
+    .HeaderContainer h1 {
+        font-family: "PorterSans";
+        color: #ff0000;
+        font-size: 42px;
+    }
+
+    .FeaturedTrip {
+        background-color: #3C0062;
+        height: 100vh;
+        display: flex;
+        padding: 5%;
+    }
+
+    .OurShuttles {
+        color: #5ED3E7;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5%;
+    }
+
+    .LeftImage {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .RightContent {
+        width: 50%;
+        padding: 10% 2.5%;
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        flex-direction: column;
+    }
+
+    .RightContentTwo {
+        width: 50%;
+        padding: 10% 2.5%;
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        flex-direction: column;
+    }
+
+    .RightContent {
+        color: white !important;
+    }
+
+    .RightContent button {
+        padding: 20px 60px;
+        border-radius: 10px;
+        border: none;
+        background-color: #ff0000;
+        color: white;
+        font-weight: bold;
+    }
+
+    .RightContentTwo {
+        color: rgb(0, 0, 0);
+    }
+
+    h4 {
+        color: #5ED3E7;
+    }
+
+    .UpcomingTrips {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3C0062;
+        height: 100vh;
+        color: white;
+    }
+
+    .IndTrip {
+        width: 250px;
+        text-align: center;
     }
