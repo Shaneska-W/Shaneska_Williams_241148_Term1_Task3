@@ -283,18 +283,32 @@ h2 {
     }
 
     .SocialMediaLinks {
-    padding: 70px 55px;
-    margin: 70px 55px;
+    padding: 20px 30px;
+    margin: 20px 30px;
     }
 
     .Icons {
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: left; 
     flex-direction: row; 
     flex-wrap: nowrap; 
     align-content: space-around;
     }
+
+    .SocialMediaLinksC {
+        padding: 70px 30px;
+        margin: 20px 30px;
+        }
+    
+        .IconsC {
+        display: flex;
+        justify-content: space-between; 
+        align-items: left; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: space-around;
+        }
 
     .Line {
         width: 100%;
@@ -348,7 +362,7 @@ h2 {
             display: flex;
             padding: 10% 2.5%;
             justify-content: space-between; 
-            align-items: flex-start; 
+            align-items: center; 
             flex-direction: row;
             margin: 0px 80px;
         }
@@ -383,7 +397,7 @@ h2 {
 
         .IconsTwo {
         display: flex;
-        padding: 70px; 
+        padding: 40px;
         align-items: center; 
         flex-direction: row; 
         flex-wrap: nowrap; 
@@ -412,13 +426,14 @@ h2 {
         .formContainer h1{
             color: white;
             font-size: 11px;
+            align-items: center;
         }
 
         #contact{
             background-image: url(../assets/formBack.png);
             background-size: cover;
             background-position: right;
-            padding: 2em 4em;
+            padding: 2em 1em;
             width: 500px;
             height: 750px;
             margin: 50px 0;
@@ -433,6 +448,8 @@ h2 {
         #contact input, #contact textarea, #contact button{
             font-size: 14px;
             font-weight: 400;
+            border-radius: 9px;
+            padding-bottom: 50px;
             }
 
             fieldset{
@@ -440,7 +457,8 @@ h2 {
                 margin: 0 0 10px;
                 min-width: 100%;
                 width: 100%;
-                padding: 0;
+                padding: 20px;
+                border-radius: 20px;
             }
 
             #contact input, #contact textarea{
@@ -536,14 +554,6 @@ h2 {
                 color: #ff0000;
             }
 
-            .HeaderTwo h1 {
-                font-family: "PorterSans";
-                 color: white;
-                 text-align: center;
-                 align-items: center;
-                 align-content: center;
-                }
-
             .backgroundImage{
                 width: 100%;
                 height: 100%;
@@ -551,8 +561,27 @@ h2 {
                 background-image: url(../assets/headerbackBack.png)
                 }
 
+                .HeaderTwo {
+                    font-family: "PorterSans";
+                    color: white;
+                    text-align: center;
+                    align-items: center;
+                    align-content: center;
+            
+                    background-image: url(../assets/headerbackBack.png);
+                    height: 50vh;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    justify-content: flex-start;  
+                    flex-direction: column-reverse;  
+                    align-content: space-around;
+                    padding: 5%;
+                    }
+
                 .FiltersContainer {
-                    background-color: #3C0062;
+                    background-color: #3b00605c;
                     display: flex;
                     justify-content: space-around; align-items: center;  flex-direction: row; flex-wrap: nowrap; align-content: space-between;
                     height: 10vh;
@@ -599,6 +628,60 @@ h2 {
 
 .BackToTop:hover span {
 transform: translateY(-4px);
+}
+
+.rides {
+align-content: center;
+}
+
+.classicMars, .giant {
+    background-color: #ffffff;
+        height: 100vh;
+        display: flex;
+        padding: 50px;
+}
+
+.neptune, .saturn {
+    background-color: #3C0062;
+        height: 100vh;
+        display: flex;
+        padding: 70px;
+        flex-direction: row;
+        align-content: center;
+}
+
+.LeftImage2 {
+    width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 5px;
+}
+
+.RightContent2 {
+    align-items: center;
+    padding: 30px 60px;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    align-items: center;
+}
+
+.info {
+    color: #575757;
+}
+
+.RightContent3 {
+    align-items: center;
+    padding: 30px 60px;
+    border: none;
+    color: #ffffff;
+}
+
+.info2 {
+    color: #ffffff;
 }
 
 
