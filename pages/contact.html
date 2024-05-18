@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <div class="Insert">
+        <div class="Insert" class='shadow-lg p-3 mb-5 bg-white rounded'>
             <div class="flexRight">
             <div class="formContainer">
             <form id="contact">
@@ -98,7 +98,15 @@
         </fieldset>
         
         <fieldset> 
-            <button name="Submit" type="submit" id="submitContactForm">Submit</button>
+            <button name="Submit" type="submit" id="alertButton" onclick="showAlert()">Submit</button>
+            
+              <script>
+                document.getElementById("alertButton").addEventListener("click", function() {
+                  alert("Thank you for the message, Shaneska!");
+                });
+              </script>
+
+
         </fieldset>
             </form>
             </div>
@@ -111,6 +119,9 @@
             keyboard_double_arrow_up
             </span>
     </a>
+
+    
+  
 
     <section class="Footer">
         <footer>
